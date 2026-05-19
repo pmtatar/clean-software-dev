@@ -1,0 +1,12 @@
+CompileFlags:
+  Add: [-std=c++17]
+---
+If:
+  PathMatch: .*/.*
+CompileFlags:
+  Add: [-I../utils]
+---
+If:
+  PathMatch: .*/.*/.*
+CompileFlags:
+  Add: [-I../../utils]
